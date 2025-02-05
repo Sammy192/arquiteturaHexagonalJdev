@@ -26,7 +26,7 @@ public class CalculoBoletoController {
     @PostMapping("/calculo")
     @Operation(summary = "Calcular juros de um boleto")
     public ResponseEntity<CalculoBoletoResponse> calcularBoleto(@Valid @RequestBody CalculoBoletoRequest boleto) {
-        BoletoCalculado boletoCalculado = calculoBoletoPort.executar(boleto.getCodigo(), boleto.getDataPagamento());
+        BoletoCalculado boletoCalculado = calculoBoletoPort.calcularJurosParaBoleto(boleto.getCodigo(), boleto.getDataPagamento());
         return ResponseEntity.ok(boletoCalculoMapper.toDto(boletoCalculado));
     }
 }

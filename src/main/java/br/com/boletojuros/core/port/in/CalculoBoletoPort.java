@@ -6,5 +6,5 @@ import java.time.LocalDate;
 
 public interface CalculoBoletoPort {
 
-    BoletoCalculado executar(String codigo, LocalDate dataPagamento);
+    BoletoCalculado calcularJurosParaBoleto(String codigo, LocalDate dataPagamento);
 }

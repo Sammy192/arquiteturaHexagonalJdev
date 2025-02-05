@@ -27,8 +27,8 @@ public class CalcularBoletoUseCase implements CalculoBoletoPort {
     private final SalvarCalculoBoletoPort salvarCalculoBoletoPort;
 
     @Override
-    public BoletoCalculado executar(String codigo, LocalDate dataPagamento) {
-        var boleto = complementoBoletoPort.executar(codigo);
+    public BoletoCalculado calcularJurosParaBoleto(String codigo, LocalDate dataPagamento) {
+        var boleto = complementoBoletoPort.obterBoletoCompleto(codigo);
         validar(boleto);
 
         var diasVencidos = getDiasVencidos(boleto.getDataVencimento(), dataPagamento);
@@ -45,7 +45,7 @@ public class CalcularBoletoUseCase implements CalculoBoletoPort {
                 .tipo(boleto.getTipo())
                 .build();
 
-        salvarCalculoBoletoPort.executar(boletoCalculado);
+        salvarCalculoBoletoPort.persistirBoleto(boletoCalculado);
 
         return boletoCalculado;
     }

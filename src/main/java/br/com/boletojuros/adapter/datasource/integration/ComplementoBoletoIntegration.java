@@ -16,7 +16,7 @@ public class ComplementoBoletoIntegration implements ComplementoBoletoPort {
     private final BoletoMapper mapper;
 
     @Override
-    public Boleto executar(String codigo) {
+    public Boleto obterBoletoCompleto(String codigo) {
         BoletoDTO boletoDTO = complementoBoletoClient.getBoleto(codigo);
         return mapper.toBoletoDomain(boletoDTO);
     }

@@ -16,7 +16,7 @@ public class SalvarBoletoCalculado implements SalvarCalculoBoletoPort {
     private final BoletoCalculoMapper boletoCalculoMapper;
 
     @Override
-    public void executar(BoletoCalculado boletoCalculado) {
+    public void persistirBoleto(BoletoCalculado boletoCalculado) {
         BoletoCalculadoEntity entity = boletoCalculoMapper.toEntity(boletoCalculado);
         boletoCalculadoRepository.save(entity);
     }
