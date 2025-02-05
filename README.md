@@ -74,6 +74,16 @@ Para executar o projeto:
  - Executar o comando `docker-compose up` para subir os containers;
  - Executar o projeto.
  - Acessar a documentação da API através do link `http://localhost:8080/swagger-ui.html`
+ - Informe os dados do boleto Código do boleto e DataPagamento, tendo como base os dados Mockados em API que são mencionados abaixo.
+   A DataPagamento que deseja informar dependende da DataVencimento do boleto mockado
+
+
+# Dados em banco: 
+![image](https://github.com/user-attachments/assets/39c0afb4-49f8-456b-9b1a-1a1613953e31)
+
+Para conectar no banco use: http://localhost:8181/
+
+![image](https://github.com/user-attachments/assets/d189e149-9049-4e75-b6aa-137dab83a04a)
 
 
 Para termos disponível a entrada de boletos para caso de uso utilizado o [Beeceptor](https://beeceptor.com/) que podemos criar Mocks de endpoints.
