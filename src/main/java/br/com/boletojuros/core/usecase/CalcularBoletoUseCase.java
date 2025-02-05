@@ -32,8 +32,8 @@ public class CalcularBoletoUseCase implements CalculoBoletoPort {
         validar(boleto);
 
         var diasVencidos = getDiasVencidos(boleto.getDataVencimento(), dataPagamento);
-        var valorJurosDiario = JUROS_DIARIO.multiply(boleto.getValor()).divide(BigDecimal.valueOf(100));
-        var juros = valorJurosDiario.multiply(BigDecimal.valueOf(diasVencidos)).setScale(2, RoundingMode.HALF_EVEN);
+        var valorJurosDia = JUROS_DIARIO.multiply(boleto.getValor()).divide(new BigDecimal(100));
+        var juros = valorJurosDia.multiply(new BigDecimal(diasVencidos)).setScale(2, RoundingMode.HALF_EVEN);
 
         var boletoCalculado = BoletoCalculado.builder()
                 .codigo(boleto.getCodigo())

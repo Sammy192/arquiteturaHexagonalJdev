@@ -6,10 +6,10 @@ import br.com.boletojuros.adapter.datasource.mapper.BoletoMapper;
 import br.com.boletojuros.core.domain.Boleto;
 import br.com.boletojuros.core.port.out.ComplementoBoletoPort;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 @RequiredArgsConstructor
-@Service
+@Component
 public class ComplementoBoletoIntegration implements ComplementoBoletoPort {
 
     private final ComplementoBoletoClient complementoBoletoClient;

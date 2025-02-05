@@ -69,10 +69,42 @@ Response →
 
 # Mais detalhes
 
+Para executar o projeto:
+ - Realizar clone do projeto;
+ - Executar o comando `docker-compose up` para subir os containers;
+ - Executar o projeto.
+ - Acessar a documentação da API através do link `http://localhost:8080/swagger-ui.html`
+
+
 Para termos disponível a entrada de boletos para caso de uso utilizado o [Beeceptor](https://beeceptor.com/) que podemos criar Mocks de endpoints.
 
 
 Dentro desta ferramenta foi configurado alguns cenários que retorna o objeto semelhante ao response citado anteriormente.
-boleto 123456789 - caso de sucesso pois boleto está vencido.
-boleto 123 - tipo boleto NORMAL
-boleto 1234 - boleto inválido pois ainda não está vencido.
+- boleto 123456789 - caso de sucesso pois boleto está vencido.
+- json mockado
+````
+{
+ "codigo":"123456789",
+"data_vencimento":"2024-11-23",
+"valor":100,
+"tipo":"XPTO"
+}
+`````
+- boleto 123 - tipo boleto NORMAL (processa apenas boletos XPTO)
+````
+{
+ "codigo":"123",
+"data_vencimento":"2023-08-25",
+"valor": 50.0,
+"tipo":"NORMAL"
+}
+`````
+- boleto 1234 - boleto inválido pois ainda não está vencido.
+````
+{
+ "codigo":"1234",
+"data_vencimento":"2099-12-12",
+"valor": 50.0,
+"tipo":"XPTO"
+}
+`````

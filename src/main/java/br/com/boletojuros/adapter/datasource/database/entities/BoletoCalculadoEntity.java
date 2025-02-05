@@ -25,7 +25,7 @@ public class BoletoCalculadoEntity {
     private BigDecimal valorOriginal;
 
     @Column
-    private BigDecimal valor;
+    private BigDecimal valorCorrigido;
 
     @Column
     private LocalDate dataVencimento;

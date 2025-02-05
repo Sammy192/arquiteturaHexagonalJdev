@@ -18,6 +18,12 @@ public enum TipoExcecao {
         public String getMensagemErro() {
             return "Boleto não vencido";
         }
+    },
+    CONTEUDO_INVALIDO {
+        @Override
+        public String getMensagemErro() {
+            return "Conteudo inválido";
+        }
     };
 
     public abstract String getMensagemErro();

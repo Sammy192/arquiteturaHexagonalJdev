@@ -19,7 +19,8 @@ public class CalculoBoletoResponse {
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataVencimento;
 
-    private BigDecimal valor;
+    @JsonProperty("valor")
+    private BigDecimal valorCorrigido;
 
     private TipoBoleto tipo;
 }

@@ -5,6 +5,6 @@ import br.com.boletojuros.core.domain.BoletoCalculado;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")
-public interface CalculoBoletoMapper {
+public interface BoletoCalculadoMapper {
     CalculoBoletoResponse toDto(BoletoCalculado boletoCalculado);
 }
