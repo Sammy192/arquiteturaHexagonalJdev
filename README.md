@@ -1,4 +1,15 @@
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
+
 # API CALCULA JUROS BOLETO
+
+Projeto desenvolvido com objetivo de conhecer sobre Arquitetura Hexagonal. JdevTreinamentos.
+
+![image](https://github.com/user-attachments/assets/d2d676da-ab79-4798-a97e-32e8e43d196b)
+
+![image](https://github.com/user-attachments/assets/80e96c32-7720-4fa4-a9a2-b16439d98688)
+
+
 
 ## PROBLEMA:
 **ENQUANTO** usuário da API
@@ -46,6 +57,7 @@ Response →
 
 # Ferramentas
 
+- Lombok
 - Intellij
 - Spring boot
 - Docker
