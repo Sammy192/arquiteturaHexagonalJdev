@@ -10,7 +10,6 @@ Projeto desenvolvido com objetivo de conhecer sobre Arquitetura Hexagonal. JdevT
 ![image](https://github.com/user-attachments/assets/80e96c32-7720-4fa4-a9a2-b16439d98688)
 
 
-
 ## PROBLEMA:
 **ENQUANTO** usuário da API
 
@@ -67,3 +66,13 @@ Response →
 - Mysql
 - Feign Client
 - Map Struct
+
+# Mais detalhes
+
+Para termos disponível a entrada de boletos para caso de uso utilizado o [Beeceptor](https://beeceptor.com/) que podemos criar Mocks de endpoints.
+
+
+Dentro desta ferramenta foi configurado alguns cenários que retorna o objeto semelhante ao response citado anteriormente.
+boleto 123456789 - caso de sucesso pois boleto está vencido.
+boleto 123 - tipo boleto NORMAL
+boleto 1234 - boleto inválido pois ainda não está vencido.
