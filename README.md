@@ -4,6 +4,9 @@
 # API CALCULA JUROS BOLETO
 
 Projeto desenvolvido com objetivo de conhecer sobre Arquitetura Hexagonal. JdevTreinamentos.
+link extra para explicação da arquitetura:
+
+[Aprenda mais](https://conteudos.kipperdev.com.br/video-arquitetura-hexagonal-kipperdev)
 
 ![image](https://github.com/user-attachments/assets/2bf9bcc3-908a-4dbc-b9d7-bbfbb382c13c)
 
