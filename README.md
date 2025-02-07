@@ -5,6 +5,8 @@
 
 Projeto desenvolvido com objetivo de conhecer sobre Arquitetura Hexagonal. JdevTreinamentos.
 
+![image](https://github.com/user-attachments/assets/2bf9bcc3-908a-4dbc-b9d7-bbfbb382c13c)
+
 ![image](https://github.com/user-attachments/assets/d2d676da-ab79-4798-a97e-32e8e43d196b)
 
 ![image](https://github.com/user-attachments/assets/80e96c32-7720-4fa4-a9a2-b16439d98688)
